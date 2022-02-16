@@ -1,6 +1,7 @@
+// calculate part is here
 document.getElementById("calculate-btn").addEventListener("click", function(){
 
-    // get the input field total field
+    // get the input fields
     const incomeField = document.getElementById("income-field");
     const foodField = document.getElementById("food-field");
     const rentField = document.getElementById("rent-field");
@@ -9,6 +10,7 @@ document.getElementById("calculate-btn").addEventListener("click", function(){
     const totalBalance = document.getElementById("total-balance");
 
 
+    //calculate expenses and balance
     const totalExpenseAmount = parseFloat(totalExpense.innerText) + parseFloat(foodField.value) + parseFloat(rentField.value) + parseFloat(clothField.value);
     totalExpense.innerText = totalExpenseAmount;
 
@@ -18,6 +20,27 @@ document.getElementById("calculate-btn").addEventListener("click", function(){
 
     const totalBalanceAmount = parseFloat(incomeField.value) - parseFloat(totalExpenseAmount);
     totalBalance.innerText = totalBalanceAmount;
-    incomeField.value = "";
+    
 })
 
+// money saving part is here
+document.getElementById("save-btn").addEventListener("click", function(){
+   // get the input fields
+    const savingField = document.getElementById("saving-field");
+    const savingTotal = document.getElementById("saving-Total");
+    const remainingBalance = document.getElementById("remaining-balance");
+    const incomeField = document.getElementById("income-field");
+    const totalBalance = document.getElementById("total-balance");
+
+    //calculate the saving and remaining balance
+    const savingFieldInput = savingField.value;
+    const savingAmount = (incomeField.value / 100) * savingFieldInput;
+
+    savingTotal.innerText = savingAmount;
+
+    incomeField.value = "";
+    savingField.value = "";
+
+    const remainingBalanceAmount = parseFloat(totalBalance.innerText) - parseFloat(savingAmount);
+    remainingBalance.innerText = remainingBalanceAmount;
+})
