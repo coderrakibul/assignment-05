@@ -1,3 +1,4 @@
+/* custom button design*/
 .button-design {
   background-color: #59a5ff;
   color: white;
@@ -9,6 +10,7 @@
   font-weight: bold;
 }
 
+/* some input styles*/
 .input-style {
   outline: 0;
   border: 0;
@@ -17,6 +19,8 @@
   border-radius: 5px;
   font-size: 20px;
 }
+
+/* a simple background color*/
 .company-bg-color {
   background-color: #f8f8f8;
 }
