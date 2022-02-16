@@ -1,19 +1,22 @@
-.button-design{
-    background-color: #59A5FF;
-    color:white;
-    padding: 5px 35px;
-    border-radius:5px;
-    outline:0;
-    border:0;
-    font-size:25px;
-    font-weight:bold;
+.button-design {
+  background-color: #59a5ff;
+  color: white;
+  padding: 5px 35px;
+  border-radius: 5px;
+  outline: 0;
+  border: 0;
+  font-size: 20px;
+  font-weight: bold;
 }
 
-.input-style{
-    outline:0;
-    border:0;
-    background-color: #DCDCDC;
-    padding:10px;
-    border-radius:5px;
-    font-size:20px;
+.input-style {
+  outline: 0;
+  border: 0;
+  background-color: #dcdcdc;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+.company-bg-color {
+  background-color: #f8f8f8;
 }

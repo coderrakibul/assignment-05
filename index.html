@@ -30,17 +30,21 @@
     <!-- main part of this website -->
     <main>
       <section class="container mt-5">
-        <div class="row">
-          <div class="col">
+        <div class="row g-5">
+
+            <!-- image part -->
+          <div class="col col-12 col-lg-6">
             <img class="img-fluid" src="images/dollar.jpg" alt="" />
           </div>
-          <div class="col">
-            <div>
+
+          <!-- salary calculation part -->
+          <div class="col col-12 col-lg-6 company-bg-color p-5">
+
               <div class="mb-5">
                 <h4 class="text-center">Income</h4>
                 <h5 class="text-end">
                   <label class="fs-5" for="income-field">Income:</label>
-                  <input id="income-field" class="input-style" type="text" />
+                  <input id="income-field" class="input-style  w-50" type="text" />
                 </h5>
               </div>
 
@@ -48,17 +52,17 @@
                 <h4 class="text-center">Expenses</h4>
                 <h5 class="text-end">
                   <label class="fs-5" for="food-field">Food: </label>
-                  <input id="food-field" class="input-style" type="text" />
+                  <input id="food-field" class="input-style  w-50" type="text" />
                 </h5>
 
                 <h5  class="text-end">
                   <label class="fs-5" for="rent-field">Rent: </label>
-                  <input id="rent-field" class="input-style" type="text" />
+                  <input id="rent-field" class="input-style  w-50" type="text" />
                 </h5>
 
                 <h5  class="text-end">
                   <label class="fs-5" for="cloth-field">Clothes: </label>
-                  <input id="cloth-field" class="input-style" type="text" />
+                  <input id="cloth-field" class="input-style w-50" type="text" />
                 </h5>
 
                 <div class="text-end mt-5">
@@ -66,8 +70,24 @@
                 </div>
               </div>
 
-            </div>
-            
+              <!-- expense and balance part -->
+              <div class="mt-5">
+                <h4 class="text-center">Total Expenses: <span>00</span></h4>
+                <h4 class="text-center">Balance: <span>00</span></h4>
+              </div>
+
+              <!-- saving part -->
+              <div class="mt-5 text-end">
+                 <h5>
+                 <label class="fs-5" for="save-field">Save: </label>
+                 <input id="save-field" class="input-style w-25" type="text" />
+                <span class="fs-5 fw-bold">%</span>
+                <button class="button-design">Save</button>
+                </h5>
+
+                <h4 class="text-center mt-3">Saving Amount: <span>00</span></h4>
+                <h4 class="text-center">Remaining Balance: <span>00</span></h4>
+              </div>
           </div>
         </div>
       </section>
