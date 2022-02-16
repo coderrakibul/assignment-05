@@ -1,0 +1,19 @@
+.button-design{
+    background-color: #59A5FF;
+    color:white;
+    padding: 5px 35px;
+    border-radius:5px;
+    outline:0;
+    border:0;
+    font-size:25px;
+    font-weight:bold;
+}
+
+.input-style{
+    outline:0;
+    border:0;
+    background-color: #DCDCDC;
+    padding:10px;
+    border-radius:5px;
+    font-size:20px;
+}
