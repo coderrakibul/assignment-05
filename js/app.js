@@ -1,14 +1,20 @@
+// function for getting id
+function getInputId(id) {
+    const getId = document.getElementById(id);
+    return getId;
+
+}
 
 // calculate part is here
 document.getElementById("calculate-btn").addEventListener("click", function () {
 
-    // get the input fields
-    const incomeField = document.getElementById("income-field");
-    const foodField = document.getElementById("food-field");
-    const rentField = document.getElementById("rent-field");
-    const clothField = document.getElementById("cloth-field");
-    const totalExpense = document.getElementById("total-expense");
-    const totalBalance = document.getElementById("total-balance");
+    // get the input fields with calling function
+    const incomeField = getInputId("income-field");
+    const foodField = getInputId("food-field");
+    const rentField = getInputId("rent-field");
+    const clothField = getInputId("cloth-field");
+    const totalExpense = getInputId("total-expense");
+    const totalBalance = getInputId("total-balance");
 
 
     //calculate expenses and balance
@@ -52,14 +58,14 @@ document.getElementById("save-btn").addEventListener("click", function () {
     //calculate the saving and remaining balance
     const savingFieldInput = savingField.value;
     const savingAmount = (incomeField.value / 100) * savingFieldInput;
-    if(savingAmount > totalBalance.innerText){
+    if (savingAmount > totalBalance.innerText) {
         incomeField.value = "";
         savingField.value = "";
         return alert("sorry! not enough balance to save");
     }
-    if(isNaN(savingField.value) || savingField.value == "" || savingField.value < 0){
+    if (isNaN(savingField.value) || savingField.value == "" || savingField.value < 0) {
         savingField.value = "";
-        return alert("pleae! input a positive number")
+        return alert("pleae! enter a valid number")
     }
 
     savingTotal.innerText = savingAmount;
@@ -70,5 +76,3 @@ document.getElementById("save-btn").addEventListener("click", function () {
     const remainingBalanceAmount = parseFloat(totalBalance.innerText) - parseFloat(savingAmount);
     remainingBalance.innerText = remainingBalanceAmount;
 })
-
-
